@@ -3,6 +3,10 @@ A simple chatbot made in Python.
 ## Running
 ### Host/Server
 To run the program you first have to start the host with the command ``python ./host.py``
+The host takes in the following arguments:
+- -p or --port takes an integer, that is the port. This number must be between 1 024 and 65 535, as these are the port that are open and free to use. Port from 0 to 1023 is reserved for other processes. 
+- -d or --debug is a Boolean. If the argument is passed when starting the host, you will get a lot of messages on what is going on behind the scenes. This is useful when troubleshooting the program and see where the program is failing. This can also be used to se potential improvements to the code
+- -m or --manual gives you control over the phrase the server sends out. This is also a Boolean, so when the program is called with this argument, you will be prompted to write a phrase. This will then be handled as any other premade string from the server, and you will get a response from the bots. 
 
 ### Client/Bots
 To run the client, write ``python ./client.py`` in the terminal
