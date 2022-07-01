@@ -5,7 +5,7 @@ A simple chatbot made in Python.
 To run the program you first have to start the host with the command ``python ./host.py``
 The host takes in the following arguments:
 - -p or --port takes an integer, that is the port. This number must be between 1 024 and 65 535, as these are the port that are open and free to use. Port from 0 to 1023 is reserved for other processes. 
-- -m or --manual gives you control over the phrase the server sends out. This is also a Boolean, so when the program is called with this argument, you will be prompted to write a phrase. This will then be handled as any other premade string from the server, and you will get a response from the bots. 
+- (Optional) -m or --manual gives you control over the phrase the server sends out. This is also a Boolean, so when the program is called with this argument, you will be prompted to write a phrase. This will then be handled as any other premade string from the server, and you will get a response from the bots. 
 
 ### Client/Bots
 To run the client, write ``python ./client.py`` in the terminal
